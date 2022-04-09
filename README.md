@@ -41,7 +41,7 @@ set FLASK_APP to point to tf.py, and run flask as usual. The flask app accepts a
 ```
 
 ### For usage with Websocket (Web Server/JS)
-Please install [PyWebsocket3](https://github.com/GoogleChromeLabs/pywebsocket3), and then open a Powershell/Terminal in the `mod_pywebsocket` folder.
+Please install [PyWebsocket3](https://github.com/GoogleChromeLabs/pywebsocket3). Move `tf.py` file into the `mod_pywebsocket` folder and then open a Powershell/Terminal in the same folder
 
 - Powershell
 ```
