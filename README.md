@@ -56,7 +56,7 @@ python3 standalone.py -p 9998 -w ../path/to/tensor_wsh.py folder
 Now that your websocket server is up and ready, Go to the ui folder, and you can see a html and js file. Open the html file to test it.
 Please make sure that your websocket server has finished initializing the tool, which will display `Tool Initialized.` when its done.
 
-You can tweak the js to your needs.
+You can tweak the js to your needs. Observe the console panel to see it work and debug it.
 
 # REFERENCES
 
