@@ -32,7 +32,7 @@ For deployment, I'd recommend using ngrok for the websocket, since websocket is 
 For local env, stick with localhost and you'll be great.
 
 ### For usage with Flask (API server)
-set FLASK_APP to point to tf.py, and run flask as usual. The flask app accepts a JSON payload with one compulsory value "captions".
+set FLASK_APP to point to app.py, and run flask as usual. The flask app accepts a JSON payload with one compulsory value "captions".
 
 ```json
 {
