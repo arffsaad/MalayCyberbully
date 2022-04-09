@@ -26,6 +26,37 @@ Jika anda rasa projek ini boleh atau patut ditambahbaik, sila 'fork' dan lakukan
 Dev Update:
 adding websocket usage in the project.
 
+## Installation/Usage
+
+For deployment, I'd recommend using ngrok for the websocket, since websocket is client-side.
+For local env, stick with localhost and you'll be great.
+
+### For usage with Flask (API server)
+set FLASK_APP to point to tf.py, and run flask as usual. The flask app accepts a JSON payload with one compulsory value "captions".
+
+```json
+{
+    "captions" : "Sentence to be evaluated"
+}
+```
+
+### For usage with Websocket (Web Server/JS)
+Please install [PyWebsocket3](https://github.com/GoogleChromeLabs/pywebsocket3), and then open a Powershell/Terminal in the `mod_pywebsocket` folder.
+
+- Powershell
+```
+python .\standalone.py -p 9998 -w ../path/to/tensor_wsh.py folder
+# For example, your tensor_wsh.py is in tensor folder, then your path would be ../path/to/tensor
+```
+- Terminal (Linux)
+```
+python3 standalone.py -p 9998 -w ../path/to/tensor_wsh.py folder
+# For example, your tensor_wsh.py is in tensor folder, then your path would be ../path/to/tensor
+```
+Now that your websocket server is up and ready, Go to the ui folder, and you can see a html and js file. Open the html file to test it.
+Please make sure that your websocket server has finished initializing the tool, which will display `Tool Initialized.` when its done.
+
+You can tweak the js to your needs.
 
 # REFERENCES
 
