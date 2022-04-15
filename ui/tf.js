@@ -13,7 +13,7 @@ function tfSock() {
         ws.onmessage = function(evt) {
             var received_msg = evt.data;
             console.log(evt.data)
-            if (evt.data == 'gaduh' or evt.data == 'buli') {
+            if (evt.data == 'gaduh' || evt.data == 'buli') {
                 $('#cybPrompt').modal()
             }
             ws.close()
